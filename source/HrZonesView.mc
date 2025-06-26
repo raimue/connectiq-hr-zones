@@ -107,7 +107,7 @@ class HrZonesView extends WatchUi.DataField {
             var zy = isWide ? y + height - curHrSize[1] + 4 : y + 1;
             font = isWide ? Graphics.FONT_MEDIUM : Graphics.FONT_SYSTEM_TINY;
             var currentZone = hrZones.getCurrentBucket();
-            var zoneColor = Graphics.COLOR_BLACK;
+            var zoneColor = textColor;
             var zoneText = "R";
             if (currentZone >= 0) {
             	zoneColor = hrZones.bucketColor[currentZone];
