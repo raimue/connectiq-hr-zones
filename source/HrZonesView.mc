@@ -67,15 +67,15 @@ class HrZonesView extends WatchUi.DataField {
 
         // current heart rate, green if below average, orange if is above average
         var text = textOf(curHr);
-        var font = Graphics.FONT_NUMBER_MILD;
+        var font = Graphics.FONT_SYSTEM_NUMBER_MILD;
         var curHrSize = dc.getTextDimensions(text, font);
-        if (curHr > avgHr + tolerance && curHr > 0) {
-            dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
-        } else if (curHr < avgHr - tolerance && curHr > 0) {
-            dc.setColor(Graphics.COLOR_DK_GREEN, Graphics.COLOR_TRANSPARENT);
-        } else {
-            dc.setColor(textColor, backgroundColor);
-        }
+        //if (curHr > avgHr + tolerance && curHr > 0) {
+        //    dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
+        //} else if (curHr < avgHr - tolerance && curHr > 0) {
+        //    dc.setColor(Graphics.COLOR_DK_GREEN, Graphics.COLOR_TRANSPARENT);
+        //} else {
+        //    dc.setColor(textColor, backgroundColor);
+        //}
         var splitLeft = isWide || obscurity > 0 ? width2 : width23;
         dc.drawText(splitLeft, y + height - curHrSize[1] + 5, font, text, RIGHT_BOTTOM);
         var splitRight = isWide || obscurity > 0 ? width2 + 15 : width23;
