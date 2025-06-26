@@ -1,4 +1,4 @@
-DEVICE = edge830
-SDK_HOME = "/Users/levi/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-6.2.0-2023-05-26-cc5fddb5d"
-DEPLOY = /Volumes/GARMIN/GARMIN/APPS/
-PRIVATE_KEY = /Users/levi/Downloads/velo/iq-connect/developer_key.der
+DEVICE = edge840
+SDK_HOME = $(HOME)/.Garmin/ConnectIQ/Sdks/connectiq-sdk-lin-8.2.1-2025-06-19-f69b94140
+DEPLOY = /media/$(USER)/GARMIN/GARMIN/APPS/
+PRIVATE_KEY = $(HOME)/src/garmin-connectiq/developer_key
